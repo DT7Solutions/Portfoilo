@@ -1,0 +1,64 @@
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 ,
+.p, p, .span, span {
+    color: #000 !important;
+}
+
+.vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background img {
+    position: absolute;
+    z-index: -99;
+    left: 20%;
+    object-fit: contain;
+}
+.vlt-fullpage-slider .vlt-section {
+    background-color: whitesmoke !important;
+}
+
+.vlt-fixed-socials::after,.vlt-fixed-socials::before {
+    background-color: #161616;
+}
+.vlt-social-icon.vlt-social-icon--style-1 {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 5%;
+    border-radius: 50%;
+    background-color: #000;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.vlt-social-icon.vlt-social-icon--style-1 i{
+    font-size: 24px;
+    padding: 2.5%;
+}
+.vlt-display-1 {
+    color: #161616;
+}
+.h1.vlt-large-heading,h1.vlt-large-heading {
+    color: #161616;
+}
+[data-anchor=Home] p {
+    color: #161616;
+}
+.vlt-fullpage-slider-progress-bar {
+    background-color: #000;
+}
+.vlt-video-button a::after {
+    border: 2px solid #000;
+}
+.vlt-footer--fixed {
+    color: #000;
+}
+.vlt-experience-block {
+    border: 1px solid #000;
+    border-right: none
+}
+.vlt-experience-block__number {
+    color:#000;
+}
+[data-anchor=About] p {
+    color: #000;
+}
+.vlt-navbar .vlt-navbar-inner {
+    /* background-color: #fff; */
+}
