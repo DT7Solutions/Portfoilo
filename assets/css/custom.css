@@ -8,14 +8,25 @@
     height: 1.25rem;
 }
 .vlt-gap-70 {
+    height: 1.5rem 
+}
+.vlt-gap-70--lg {
     height: 1.5rem
+}
+.vlt-gap-75 {
+    height: 1.75rem
 }
 .vlt-gap-100 {
     height: 2rem;
 }
-
+.vlt-gap-100--lg {
+    height: 2rem
+}
 .vlt-gap-160 {
     height: 3rem
+}
+.vlt-gap-215 {
+    height: 5rem
 }
 
 .vlt-fullpage-slider .vlt-section__content {
@@ -31,16 +42,28 @@
     align-items: center;
 }
 .vlt-fixed-socials {
-    left: 3rem;
-    padding: 2.5rem;
+    left: 2rem;
+    padding: 7.5rem 2.5rem;
 }
-/* .vlt-fixed-socials .vlt-social-icon.vlt-social-icon--style-1,
-.vlt-offcanvas-menu__socials .vlt-social-icon.vlt-social-icon--style-1  {
+.vlt-fixed-socials::after,.vlt-fixed-socials::before {
+    width: 1px;
+    height: 100%;
+    margin: 0 auto;
+    content: '';
+    background-color: rgba(255,255,255,.4)
+}
+.vlt-fixed-socials::before {
+    margin-bottom: 2.5rem
+}
+.vlt-fixed-socials::after {
+    margin-top: 2.5rem
+}
+.vlt-offcanvas-menu__socials .vlt-social-icon.vlt-social-icon--style-1 {
     font-size: 1.25rem;
     padding: 2.5%;
     border: 1px solid;
     border-radius: 50%;
-} */
+}
 .vlt-offcanvas-menu__header {
     justify-content: flex-end;
     padding-bottom: 0.5rem;
@@ -61,8 +84,6 @@
 .vlt-offcanvas-menu__footer {
     padding-top: 1rem;
 }
-
-
 .vlt-navbar .vlt-navbar-inner {
     padding: 2rem 3.5rem;
 }
@@ -114,7 +135,7 @@ h1.vlt-large-heading {
 .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about-sign img {
     position: absolute;
     z-index: -99;
-    right: 62.5%;
+    left: 0%;
     bottom: -20%;
     scale: 0.75;
     object-fit: contain;
@@ -131,6 +152,28 @@ h1.vlt-large-heading {
     align-content: center;
     flex-wrap: wrap;
 }
+.vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-reviews img {
+    margin-left: -2.5%;
+    margin-bottom: 5%;
+    position: absolute;
+    z-index: -99;
+    left: 7.5%;
+    bottom: 10%;
+    scale: 1.5;
+    object-fit: contain;
+    border-right: none;
+}
+.vlt-testimonial__text p{
+    font-size: 0.9rem;
+    line-height: 2;
+    word-spacing: 1;
+    letter-spacing: 1;
+}
+.swiper-container-autoheight,.swiper-container-autoheight .swiper-slide {
+    height: auto;
+    min-height: 360px;
+    width: 100% !important;
+}
 
 .vlt-footer {
     padding: 0% 5% 1.5%;
@@ -146,35 +189,93 @@ h1.vlt-large-heading {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
     /* Styles for tablet devices */
+
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background.has-mobile-image img:nth-child(1),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about.has-mobile-image img:nth-child(1),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about-sign.has-mobile-image img:nth-child(1),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-reviews.has-mobile-image img:nth-child(1) {
+        display:none
+    }
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background.has-mobile-image img:nth-child(2),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about.has-mobile-image img:nth-child(2),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about-sign.has-mobile-image img:nth-child(2),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-reviews.has-mobile-image img:nth-child(2) {
+        display: block;
+        position: relative;
+    }
     .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background img {
         left: 0%;
     }
     .vlt-fullpage-slider .vlt-section__content {
         padding: 7.5% 10%;
     }
-    
+    .vlt-fixed-socials {
+        left: 0rem;
+    }
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-reviews img {
+        margin-left: -2.5%;
+        margin-bottom: 5%;
+        position: absolute;
+        z-index: -99;
+        left: 7.5%;
+        bottom: 30%;
+        scale: 1.5;
+        object-fit: contain;
+        border-right: none;
+    }
 }
 
 @media (max-width: 767px) {
-
     /* Styles for mobile devices */
+
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background.has-mobile-image img:nth-child(1),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about.has-mobile-image img:nth-child(1),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about-sign.has-mobile-image img:nth-child(1),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-reviews.has-mobile-image img:nth-child(1) {
+        display:none
+    }
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background.has-mobile-image img:nth-child(2),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about.has-mobile-image img:nth-child(2),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about-sign.has-mobile-image img:nth-child(2),
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-reviews.has-mobile-image img:nth-child(2) {
+        display: block;
+        position: relative;
+    }
+
     .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background img {
         left: 0%;
     }
-
+    .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background-about-sign img {
+        position: absolute;
+        z-index: -99;
+        left: -5%;
+        bottom: -25%;
+        scale: 0.75;
+        object-fit: contain;
+        border-right: none;
+    }
+    .about-content .h3,
+    .about-content h3{
+        font-size: 2.15rem;
+    }
+    .reviews{
+        margin-top: 7.5rem;
+    }
+    .reviews .h3,
+    .reviews h3 {
+        font-size: 2rem;
+        line-height: 1
+    }
     .h1.vlt-large-heading,
     h1.vlt-large-heading {
         font-size: 2.5rem;
         font-weight: 600
     }
-
     .vlt-footer-copyright {
         font-size: 0.725rem;
         pointer-events: auto
     }
-
     .vlt-fullpage-slider .vlt-section__content {
         padding: 5% 2.5%;
     }
