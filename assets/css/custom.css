@@ -281,3 +281,7 @@ h1.vlt-large-heading {
     }
 
 }
+
+.vlt-partners li img {
+    opacity:6!important;
+}
