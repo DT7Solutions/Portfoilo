@@ -400,6 +400,7 @@ h1.vlt-large-heading {
     calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
     0 calc(100% + var(--cardsGap))
   );
+
   position: relative;
   
 }
@@ -437,7 +438,24 @@ h1.vlt-large-heading {
   
   /* font-weight: 700; */
 }
+@media (min-width: 767px) {
 .olcards li .content .text {
   grid-area: text;
+  min-width: 550px;
   
 }
+}
+@media (max-width: 576px) {
+    .olcards li .content .text {
+      grid-area: text;
+     
+      
+    }
+    }
+    
+/* port */
+
+
+ 
+  
+ 
